@@ -1,0 +1,18 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+src/*.egg-info/
+src/eeg_cleaner.egg-info/
+
+outputs/
+snapshots/
+
+data/raw/ds004752_sample/
+data/raw/ds004752/
+data/raw/ds004752_manifest.json
+data/external/
+data/processed/
+
+# keep lightweight metadata and manifests in repo
+!data/raw/README.md

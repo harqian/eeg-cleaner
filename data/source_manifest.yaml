@@ -1,0 +1,28 @@
+sources:
+  - source_id: ds004752
+    kind: dataset
+    title: Zurich intracranial and scalp EEG working memory dataset
+    access: open
+    citation: "OpenNeuro ds004752"
+    urls:
+      - https://github.com/OpenNeuroDatasets/ds004752.git
+      - https://openneuro.org/datasets/ds004752
+    notes: "primary simultaneous iEEG + scalp EEG target for initial validation"
+  - source_id: zuna
+    kind: model
+    title: ZUNA EEG foundation model
+    access: open
+    citation: "Warner et al. 2026 / Zyphra"
+    urls:
+      - https://github.com/Zyphra/zuna
+      - https://huggingface.co/Zyphra/ZUNA
+      - https://pypi.org/project/zuna/
+    notes: "benchmark baseline for channel reconstruction and denoising claims"
+  - source_id: localize_mi
+    kind: dataset
+    title: Localize-MI simultaneous HD-EEG and sEEG stimulation benchmark
+    access: open
+    citation: "Mikulan et al. 2020"
+    urls:
+      - https://www.nature.com/articles/s41597-020-00660-5
+    notes: "report cites this for forward-model validation rather than denoising training"

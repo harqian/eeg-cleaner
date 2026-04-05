@@ -1,0 +1,19 @@
+[project]
+name = "eeg-cleaner"
+version = "0.1.0"
+description = "validation tooling for simultaneous iEEG/scalp EEG denoising claims"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3>=1.39.0",
+    "matplotlib>=3.10.0",
+    "mne>=1.10.0",
+    "numpy>=2.3.0",
+    "pandas>=2.3.0",
+    "pytest>=8.4.0",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.0",
+]
+
+[tool.uv]
+package = true
