@@ -4,13 +4,16 @@ from __future__ import annotations
 import argparse
 from collections import defaultdict
 import json
+import re
 import subprocess
 import sys
+from urllib.parse import urljoin, urlparse
 from urllib.request import urlretrieve
 from pathlib import Path
 from typing import Any
 
 import requests
+from requests import HTTPError
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_ROOT = PROJECT_ROOT / "src"
@@ -35,6 +38,21 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=1,
         help="number of paired ds004752 runs to download when using --with-ds004752-sample",
+    )
+    parser.add_argument(
+        "--download-localize-mi-archive",
+        action="store_true",
+        help="download the full Localize-MI GIN archive (~11.4 GiB)",
+    )
+    parser.add_argument(
+        "--download-piastra-archive",
+        action="store_true",
+        help="download the full Piastra 2024 Donders/WebDAV dataset tree (~10.7 GiB)",
+    )
+    parser.add_argument(
+        "--download-zurich-gin-archive",
+        action="store_true",
+        help="download the full Zurich GIN working-memory archive (~16.1 GiB)",
     )
     parser.add_argument(
         "--download-geneva-archive",
@@ -65,6 +83,17 @@ def fetch_json(url: str, params: dict[str, Any] | None = None) -> dict[str, Any]
     if not isinstance(payload, dict):
         raise ValueError(f"expected JSON object from {url}")
     return payload
+
+
+def fetch_text(url: str) -> str:
+    response = requests.get(
+        url,
+        timeout=60,
+        headers={"User-Agent": "eeg-cleaner/0.1.0"},
+    )
+    response.raise_for_status()
+    response.encoding = response.encoding or "utf-8"
+    return response.text
 
 
 def fetch_ds004752(force: bool) -> dict[str, str]:
@@ -172,10 +201,34 @@ def fetch_zuna_metadata(force: bool) -> dict[str, str]:
     return {"dataset": "zuna", "path": str(target_dir), "readme": str(readme_path)}
 
 
-def fetch_localize_mi_metadata(force: bool) -> dict[str, str]:
+def download_with_curl(url: str, target_path: Path, force: bool) -> None:
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    if force and target_path.exists():
+        target_path.unlink()
+    run(
+        [
+            "curl",
+            "-L",
+            "-C",
+            "-",
+            "--fail",
+            "--retry",
+            "3",
+            "--retry-delay",
+            "2",
+            url,
+            "-o",
+            str(target_path),
+        ]
+    )
+
+
+def fetch_localize_mi_metadata(force: bool, download_archive: bool) -> dict[str, Any]:
     target_dir = PROJECT_ROOT / "data" / "external" / "localize_mi"
     target_dir.mkdir(parents=True, exist_ok=True)
     metadata_path = target_dir / "crossref.json"
+    doi_landing_path = target_dir / "doi_landing.html"
+    repo_landing_path = target_dir / "gin_repo.html"
     if force or not metadata_path.exists():
         payload = fetch_json(
             "https://api.crossref.org/works",
@@ -185,7 +238,138 @@ def fetch_localize_mi_metadata(force: bool) -> dict[str, str]:
             },
         )
         metadata_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-    return {"dataset": "localize_mi", "path": str(target_dir), "metadata": str(metadata_path)}
+    if force or not doi_landing_path.exists():
+        doi_landing_path.write_text(fetch_text("https://doi.gin.g-node.org/10.12751/g-node.1cc1ae/"), encoding="utf-8")
+    if force or not repo_landing_path.exists():
+        repo_landing_path.write_text(fetch_text("https://gin.g-node.org/ezemikulan/Localize-MI"), encoding="utf-8")
+
+    result: dict[str, Any] = {
+        "dataset": "localize_mi",
+        "path": str(target_dir),
+        "metadata": str(metadata_path),
+        "doi_landing": str(doi_landing_path),
+        "repo_landing": str(repo_landing_path),
+    }
+    if download_archive:
+        archive_path = target_dir / "10.12751_g-node.1cc1ae.zip"
+        download_with_curl(
+            "https://doi.gin.g-node.org/10.12751/g-node.1cc1ae/10.12751_g-node.1cc1ae.zip",
+            archive_path,
+            force=force,
+        )
+        result["archive"] = str(archive_path)
+    return result
+
+
+def extract_href_links(html: str) -> list[str]:
+    return re.findall(r'href="([^"]+)"', html)
+
+
+def download_webdav_tree(base_url: str, current_url: str, target_dir: Path, force: bool, visited: set[str]) -> None:
+    if current_url in visited:
+        return
+    visited.add(current_url)
+
+    try:
+        html = fetch_text(current_url)
+    except HTTPError as exc:
+        if exc.response is not None and exc.response.status_code == 404:
+            return
+        raise
+    for href in extract_href_links(html):
+        child_url = urljoin(current_url, href)
+        parsed = urlparse(child_url)
+        if parsed.scheme != "https" or parsed.netloc != "webdav.data.ru.nl":
+            continue
+        if not child_url.startswith(base_url):
+            continue
+
+        relative = child_url.removeprefix(base_url).lstrip("/")
+        if not relative:
+            continue
+        parsed_child = urlparse(child_url)
+        child_name = Path(parsed_child.path.rstrip("/")).name
+        looks_like_directory = child_url.endswith("/") or "." not in child_name
+        if looks_like_directory:
+            child_url = child_url.rstrip("/") + "/"
+            download_webdav_tree(base_url, child_url, target_dir, force=force, visited=visited)
+            continue
+
+        target_path = target_dir / relative
+        download_with_curl(child_url, target_path, force=force)
+
+
+def fetch_piastra_2024_metadata(force: bool, download_archive: bool) -> dict[str, Any]:
+    target_dir = PROJECT_ROOT / "data" / "external" / "piastra_2024"
+    target_dir.mkdir(parents=True, exist_ok=True)
+    landing_path = target_dir / "landing.html"
+    webdav_index_path = target_dir / "webdav_index.html"
+    metadata_path = target_dir / "metadata.json"
+
+    if force or not landing_path.exists():
+        landing_html = fetch_text("https://doi.org/10.34973/j0jh-9j28")
+        landing_path.write_text(landing_html, encoding="utf-8")
+        marker = '<script type="application/ld+json">'
+        start = landing_html.find(marker)
+        if start != -1:
+            start += len(marker)
+            end = landing_html.find("</script>", start)
+            if end != -1:
+                payload = json.loads(landing_html[start:end])
+                metadata_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    if force or not webdav_index_path.exists():
+        webdav_index_path.write_text(
+            fetch_text("https://webdav.data.ru.nl/dcmn/DSC_4020000.14_413_v1/"),
+            encoding="utf-8",
+        )
+
+    result: dict[str, Any] = {
+        "dataset": "piastra_2024",
+        "path": str(target_dir),
+        "landing": str(landing_path),
+        "webdav_index": str(webdav_index_path),
+    }
+    if metadata_path.exists():
+        result["metadata"] = str(metadata_path)
+    if download_archive:
+        archive_dir = target_dir / "archive"
+        if force and archive_dir.exists():
+            run(["rm", "-rf", str(archive_dir)])
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        base_url = "https://webdav.data.ru.nl/dcmn/DSC_4020000.14_413_v1/"
+        download_webdav_tree(base_url, base_url, archive_dir, force=force, visited=set())
+        result["archive_dir"] = str(archive_dir)
+    return result
+
+
+def fetch_zurich_gin_wm_metadata(force: bool, download_archive: bool) -> dict[str, Any]:
+    target_dir = PROJECT_ROOT / "data" / "external" / "zurich_gin_wm"
+    target_dir.mkdir(parents=True, exist_ok=True)
+    doi_landing_path = target_dir / "doi_landing.html"
+    repo_landing_path = target_dir / "gin_repo.html"
+    if force or not doi_landing_path.exists():
+        doi_landing_path.write_text(fetch_text("https://doi.gin.g-node.org/10.12751/g-node.d76994/"), encoding="utf-8")
+    if force or not repo_landing_path.exists():
+        repo_landing_path.write_text(
+            fetch_text("https://gin.g-node.org/USZ_NCH/Human_MTL_units_scalp_EEG_and_iEEG_verbal_WM"),
+            encoding="utf-8",
+        )
+
+    result: dict[str, Any] = {
+        "dataset": "zurich_gin_wm",
+        "path": str(target_dir),
+        "doi_landing": str(doi_landing_path),
+        "repo_landing": str(repo_landing_path),
+    }
+    if download_archive:
+        archive_path = target_dir / "10.12751_g-node.d76994.zip"
+        download_with_curl(
+            "https://doi.gin.g-node.org/10.12751/g-node.d76994/10.12751_g-node.d76994.zip",
+            archive_path,
+            force=force,
+        )
+        result["archive"] = str(archive_path)
+    return result
 
 
 def osf_node_payload(node_id: str) -> dict[str, Any]:
@@ -359,7 +543,11 @@ def main() -> None:
     if "zuna" in requested:
         results.append(fetch_zuna_metadata(force=args.force))
     if "localize_mi" in requested:
-        results.append(fetch_localize_mi_metadata(force=args.force))
+        results.append(fetch_localize_mi_metadata(force=args.force, download_archive=args.download_localize_mi_archive))
+    if "piastra_2024" in requested:
+        results.append(fetch_piastra_2024_metadata(force=args.force, download_archive=args.download_piastra_archive))
+    if "zurich_gin_wm" in requested:
+        results.append(fetch_zurich_gin_wm_metadata(force=args.force, download_archive=args.download_zurich_gin_archive))
     if "milan_spes" in requested:
         results.append(fetch_milan_spes_metadata(force=args.force, download_archive=args.download_milan_archive))
     if "geneva_hidden_ieds" in requested:

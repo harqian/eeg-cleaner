@@ -24,8 +24,28 @@ sources:
     access: open
     citation: "Mikulan et al. 2020"
     urls:
-      - https://www.nature.com/articles/s41597-020-00660-5
-    notes: "report cites this for forward-model validation rather than denoising training"
+      - https://www.nature.com/articles/s41597-020-0467-x
+      - https://doi.org/10.12751/g-node.1cc1ae
+      - https://gin.g-node.org/ezemikulan/Localize-MI
+    notes: "open GIN archive with subject MRIs, surfaces, and forward models for stimulation-based forward/inverse validation"
+  - source_id: piastra_2024
+    kind: dataset
+    title: Piastra 2024 stereotactic EEG volume-conduction validation dataset
+    access: open
+    citation: "Piastra et al. 2024"
+    urls:
+      - https://doi.org/10.34973/j0jh-9j28
+      - https://data.ru.nl/collections/di/dcmn/DSC_4020000.14_413
+    notes: "open Donders/WebDAV dataset for empirical FEM validation against in-vivo sEEG measurements; likely includes anatomy/head-model assets"
+  - source_id: zurich_gin_wm
+    kind: dataset
+    title: Zurich verbal working-memory scalp EEG plus iEEG GIN archive
+    access: open
+    citation: "Boran et al. 2019 G-Node"
+    urls:
+      - https://doi.org/10.12751/g-node.d76994
+      - https://gin.g-node.org/USZ_NCH/Human_MTL_units_scalp_EEG_and_iEEG_verbal_WM
+    notes: "full GIN archive for the paired Zurich working-memory dataset with units and iEEG electrode coordinates; richer than the sparse OpenNeuro metadata checkout"
   - source_id: milan_spes
     kind: dataset
     title: Milan SPES simultaneous HD-EEG and sEEG dataset
