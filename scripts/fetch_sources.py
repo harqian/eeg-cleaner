@@ -2,11 +2,14 @@
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict
 import json
 import subprocess
 import sys
 from urllib.request import urlretrieve
 from pathlib import Path
+
+import requests
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SRC_ROOT = PROJECT_ROOT / "src"
@@ -24,7 +27,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--with-ds004752-sample",
         action="store_true",
-        help="download one real ds004752 scalp EEG EDF and one iEEG EDF from OpenNeuro S3",
+        help="download paired ds004752 scalp EEG and iEEG EDF files from OpenNeuro S3",
+    )
+    parser.add_argument(
+        "--ds004752-max-pairs",
+        type=int,
+        default=1,
+        help="number of paired ds004752 runs to download when using --with-ds004752-sample",
     )
     return parser.parse_args()
 
@@ -74,28 +83,59 @@ def fetch_ds004752(force: bool) -> dict[str, str]:
     return {"dataset": "ds004752", "path": str(target_dir), "manifest": str(manifest_path)}
 
 
-def fetch_ds004752_sample(force: bool) -> dict[str, str]:
-    base_url = "https://s3.amazonaws.com/openneuro.org/ds004752/sub-01/ses-01"
+def tracked_ds004752_pairs(dataset_dir: Path) -> list[tuple[str, str, str]]:
+    completed = subprocess.run(
+        ["git", "-C", str(dataset_dir), "ls-tree", "-r", "--name-only", "HEAD"],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    paths = [line for line in completed.stdout.splitlines() if line.endswith("_eeg.edf") or line.endswith("_ieeg.edf")]
+    pairs: dict[tuple[str, str, str], set[str]] = defaultdict(set)
+    for path in paths:
+        parts = Path(path).parts
+        if len(parts) < 4:
+            continue
+        subject, session = parts[0], parts[1]
+        prefix = Path(path).stem.rsplit("_", 1)[0]
+        modality = "ieeg" if path.endswith("_ieeg.edf") else "eeg"
+        pairs[(subject, session, prefix)].add(modality)
+    return sorted(key for key, modalities in pairs.items() if modalities == {"eeg", "ieeg"})
+
+
+def fetch_ds004752_sample(force: bool, max_pairs: int) -> dict[str, object]:
+    dataset_dir = PROJECT_ROOT / "data" / "raw" / "ds004752"
+    if not dataset_dir.exists():
+        raise SystemExit("fetch ds004752 metadata before downloading paired sample runs")
+
     sample_dir = PROJECT_ROOT / "data" / "raw" / "ds004752_sample"
     sample_dir.mkdir(parents=True, exist_ok=True)
+    selected_pairs = tracked_ds004752_pairs(dataset_dir)[:max_pairs]
+    downloads: list[dict[str, str]] = []
+    for subject, session, prefix in selected_pairs:
+        base_url = f"https://s3.amazonaws.com/openneuro.org/ds004752/{subject}/{session}"
+        modality_map = {
+            "eeg": (
+                f"{base_url}/eeg/{prefix}_eeg.edf",
+                sample_dir / f"{prefix}_eeg.edf",
+            ),
+            "ieeg": (
+                f"{base_url}/ieeg/{prefix}_ieeg.edf",
+                sample_dir / f"{prefix}_ieeg.edf",
+            ),
+        }
+        pair_record = {"subject": subject, "session": session, "run_prefix": prefix}
+        for modality, (url, path) in modality_map.items():
+            if force or not path.exists():
+                urlretrieve(url, path)
+            pair_record[f"{modality}_edf"] = str(path)
+        downloads.append(pair_record)
 
-    downloads = {
-        "eeg_edf": (
-            f"{base_url}/eeg/sub-01_ses-01_task-verbalWM_run-01_eeg.edf",
-            sample_dir / "sub-01_ses-01_task-verbalWM_run-01_eeg.edf",
-        ),
-        "ieeg_edf": (
-            f"{base_url}/ieeg/sub-01_ses-01_task-verbalWM_run-01_ieeg.edf",
-            sample_dir / "sub-01_ses-01_task-verbalWM_run-01_ieeg.edf",
-        ),
+    return {
+        "dataset": "ds004752_sample",
+        "pair_count": len(downloads),
+        "pairs": downloads,
     }
-    for _, (url, path) in downloads.items():
-        if force or not path.exists():
-            urlretrieve(url, path)
-
-    result = {name: str(path) for name, (_, path) in downloads.items()}
-    result["dataset"] = "ds004752_sample"
-    return result
 
 
 def fetch_zuna_metadata(force: bool) -> dict[str, str]:
@@ -107,12 +147,31 @@ def fetch_zuna_metadata(force: bool) -> dict[str, str]:
     return {"dataset": "zuna", "path": str(target_dir), "readme": str(readme_path)}
 
 
+def fetch_localize_mi_metadata(force: bool) -> dict[str, str]:
+    target_dir = PROJECT_ROOT / "data" / "external" / "localize_mi"
+    target_dir.mkdir(parents=True, exist_ok=True)
+    metadata_path = target_dir / "crossref.json"
+    if force or not metadata_path.exists():
+        response = requests.get(
+            "https://api.crossref.org/works",
+            params={
+                "query.title": "A dataset of simultaneous intracranial stimulation and HD-EEG recordings for source localization",
+                "rows": 1,
+            },
+            timeout=30,
+            headers={"User-Agent": "eeg-cleaner/0.1.0"},
+        )
+        response.raise_for_status()
+        metadata_path.write_text(json.dumps(response.json(), indent=2), encoding="utf-8")
+    return {"dataset": "localize_mi", "path": str(target_dir), "metadata": str(metadata_path)}
+
+
 def main() -> None:
     args = parse_args()
     manifest = manifest_index()
     requested = set(args.datasets or [])
     if args.all:
-        requested = {"ds004752", "zuna"}
+        requested = {"ds004752", "zuna", "localize_mi"}
     if not requested:
         raise SystemExit("pass --dataset <id> or --all")
 
@@ -120,9 +179,11 @@ def main() -> None:
     if "ds004752" in requested:
         results.append(fetch_ds004752(force=args.force))
         if args.with_ds004752_sample:
-            results.append(fetch_ds004752_sample(force=args.force))
+            results.append(fetch_ds004752_sample(force=args.force, max_pairs=args.ds004752_max_pairs))
     if "zuna" in requested:
         results.append(fetch_zuna_metadata(force=args.force))
+    if "localize_mi" in requested:
+        results.append(fetch_localize_mi_metadata(force=args.force))
 
     output_path = PROJECT_ROOT / "data" / "processed" / "fetch_results.json"
     output = {

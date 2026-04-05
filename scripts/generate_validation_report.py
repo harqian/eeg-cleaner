@@ -21,6 +21,9 @@ def main() -> None:
     fetch_results_path = PROJECT_ROOT / "data" / "processed" / "fetch_results.json"
     zuna_probe_paths = sorted((PROJECT_ROOT / "outputs").glob("zuna_probe_*/zuna_probe.json"))
     ds004752_inspection_paths = sorted((PROJECT_ROOT / "outputs").glob("ds004752_inspection_*/summary.json"))
+    ds004752_aggregate_paths = sorted((PROJECT_ROOT / "outputs").glob("ds004752_aggregate_*/summary.json"))
+    localize_mi_inspection_paths = sorted((PROJECT_ROOT / "outputs").glob("localize_mi_inspection_*/summary.json"))
+    paired_probe_paths = sorted((PROJECT_ROOT / "outputs").glob("paired_ieeg_scalp_probe_*/probe_summary.json"))
     bounded_memory_paths = sorted((PROJECT_ROOT / "outputs").glob("zuna_bounded_*/memory_samples.csv"))
 
     sources = pd.DataFrame(
@@ -46,6 +49,9 @@ def main() -> None:
         "fetch_results_exists": fetch_results_path.exists(),
         "zuna_probe_runs": len(zuna_probe_paths),
         "ds004752_inspection_runs": len(ds004752_inspection_paths),
+        "ds004752_aggregate_runs": len(ds004752_aggregate_paths),
+        "localize_mi_inspection_runs": len(localize_mi_inspection_paths),
+        "paired_ieeg_scalp_probe_runs": len(paired_probe_paths),
         "bounded_memory_runs": len(bounded_memory_paths),
     }
     (output_dir / "report_summary.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
