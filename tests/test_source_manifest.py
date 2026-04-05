@@ -10,3 +10,9 @@ def test_manifest_loads() -> None:
 def test_manifest_index_contains_zuna() -> None:
     index = manifest_index()
     assert "zuna" in index
+
+
+def test_manifest_index_contains_new_public_datasets() -> None:
+    index = manifest_index()
+    assert "milan_spes" in index
+    assert "geneva_hidden_ieds" in index

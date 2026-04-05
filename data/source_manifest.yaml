@@ -26,3 +26,23 @@ sources:
     urls:
       - https://www.nature.com/articles/s41597-020-00660-5
     notes: "report cites this for forward-model validation rather than denoising training"
+  - source_id: milan_spes
+    kind: dataset
+    title: Milan SPES simultaneous HD-EEG and sEEG dataset
+    access: open
+    citation: "Parmigiani et al. 2022"
+    urls:
+      - https://osf.io/wsgzp/
+      - https://doi.org/10.17605/OSF.IO/WSGZP
+      - https://doi.org/10.1016/j.brs.2022.04.007
+    notes: "public OSF dataset with multipart BIDS archive and small additional metadata file"
+  - source_id: geneva_hidden_ieds
+    kind: dataset
+    title: Geneva hidden IEDs simultaneous HD-EEG and sEEG dataset
+    access: open
+    citation: "Zauli et al. 2024"
+    urls:
+      - https://osf.io/89ndr/
+      - https://doi.org/10.17605/OSF.IO/89NDR
+      - https://doi.org/10.1016/j.jneumeth.2024.110193
+    notes: "public OSF project with a downloadable coreg-spikes archive"
