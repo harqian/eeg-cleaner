@@ -1,0 +1,4 @@
+subject,run,description,stim_contacts,nearest_source_dist_m,peak_latency_ms,topo_corr_peak_abs,topo_corr_peak_signed,topo_corr_rms,interp_topo_corr,forward_beats_interpolation,matched_channel_count,epoch_count
+sub-01,sub-01_task-seegstim_run-01,Stimulation of channel K13-14 1mA,"['K13', 'K14']",0.0019012431684617564,6.0,0.5062518541963648,-0.5062518541963648,0.5722340489613954,0.9042216715544259,False,236,38
+sub-01,sub-01_task-seegstim_run-02,Stimulation of channel K13-14 5mA,"['K13', 'K14']",0.0019012431684617564,5.75,0.5037914282266583,-0.5037914282266583,0.4949611205388385,0.9179848833109602,False,235,36
+sub-01,sub-01_task-seegstim_run-03,Stimulation of channel N2-3 1mA,"['N2', 'N3']",0.001861240125663368,8.25,0.5597584624886773,-0.5597584624886773,0.525045894828481,0.9403015511909608,False,236,38

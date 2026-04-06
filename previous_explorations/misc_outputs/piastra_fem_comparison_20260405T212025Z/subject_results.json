@@ -1,0 +1,161 @@
+[
+  {
+    "subject_model_id": "s0",
+    "n_dipoles": 20,
+    "n_electrodes": 146,
+    "pairwise_topography_correlation": {
+      "3c_vs_4c": {
+        "mean_corr": 0.9928222191697257,
+        "median_corr": 0.9990693800145372,
+        "min_corr": 0.909159094246474,
+        "max_corr": 0.9999624686127129
+      },
+      "3c_vs_5c": {
+        "mean_corr": 0.9801574160022213,
+        "median_corr": 0.9937120531834545,
+        "min_corr": 0.8448858241172725,
+        "max_corr": 0.9999451230473292
+      },
+      "4c_vs_5c": {
+        "mean_corr": 0.9874891806180515,
+        "median_corr": 0.9975319658568079,
+        "min_corr": 0.8203433045446284,
+        "max_corr": 0.999938399677359
+      }
+    },
+    "pattern_norms": {
+      "3c": {
+        "mean_norm": 70.05493354117559,
+        "std_norm": 19.177567032007126
+      },
+      "4c": {
+        "mean_norm": 64.34240388492375,
+        "std_norm": 20.78115615539526
+      },
+      "5c": {
+        "mean_norm": 74.88252080680192,
+        "std_norm": 25.199494962091737
+      }
+    },
+    "relative_differences": {
+      "3c_to_4c": {
+        "mean_rel_diff": 0.1097745267139046,
+        "max_rel_diff": 0.7643434454433148
+      },
+      "4c_to_5c": {
+        "mean_rel_diff": 0.15926401941913998,
+        "max_rel_diff": 0.6838890335247739
+      },
+      "3c_to_5c": {
+        "mean_rel_diff": 0.22236519062168852,
+        "max_rel_diff": 0.7634076856638261
+      }
+    }
+  },
+  {
+    "subject_model_id": "s3",
+    "n_dipoles": 38,
+    "n_electrodes": 110,
+    "pairwise_topography_correlation": {
+      "3c_vs_4c": {
+        "mean_corr": 0.9985603969341533,
+        "median_corr": 0.9999810882689286,
+        "min_corr": 0.9609714912969554,
+        "max_corr": 0.9999996970575996
+      },
+      "3c_vs_5c": {
+        "mean_corr": 0.9942578308444915,
+        "median_corr": 0.9982981796071395,
+        "min_corr": 0.9609107948676776,
+        "max_corr": 0.999962305905047
+      },
+      "4c_vs_5c": {
+        "mean_corr": 0.9961833434343891,
+        "median_corr": 0.9984559764651602,
+        "min_corr": 0.9771818223738117,
+        "max_corr": 0.9999707948437332
+      }
+    },
+    "pattern_norms": {
+      "3c": {
+        "mean_norm": 105.3904780636673,
+        "std_norm": 129.96819733349784
+      },
+      "4c": {
+        "mean_norm": 104.74064195858122,
+        "std_norm": 130.14625484327115
+      },
+      "5c": {
+        "mean_norm": 155.15364543929897,
+        "std_norm": 288.6543923957355
+      }
+    },
+    "relative_differences": {
+      "3c_to_4c": {
+        "mean_rel_diff": 0.026524422429290755,
+        "max_rel_diff": 0.27905614995930306
+      },
+      "4c_to_5c": {
+        "mean_rel_diff": 0.17951953734412945,
+        "max_rel_diff": 0.5741265578338196
+      },
+      "3c_to_5c": {
+        "mean_rel_diff": 0.18980856053694153,
+        "max_rel_diff": 0.5741071324803874
+      }
+    }
+  },
+  {
+    "subject_model_id": "s4",
+    "n_dipoles": 17,
+    "n_electrodes": 175,
+    "pairwise_topography_correlation": {
+      "3c_vs_4c": {
+        "mean_corr": 0.9949246320042091,
+        "median_corr": 0.9999815126878371,
+        "min_corr": 0.959798872900914,
+        "max_corr": 0.9999994742347597
+      },
+      "3c_vs_5c": {
+        "mean_corr": 0.9907332861267477,
+        "median_corr": 0.9968483590203965,
+        "min_corr": 0.9581171220449447,
+        "max_corr": 0.9999428017883099
+      },
+      "4c_vs_5c": {
+        "mean_corr": 0.99684122205391,
+        "median_corr": 0.9990525785071948,
+        "min_corr": 0.9812236383216214,
+        "max_corr": 0.9999353549192312
+      }
+    },
+    "pattern_norms": {
+      "3c": {
+        "mean_norm": 89.13655138602405,
+        "std_norm": 56.29593685413784
+      },
+      "4c": {
+        "mean_norm": 86.72435398274354,
+        "std_norm": 57.27981249959835
+      },
+      "5c": {
+        "mean_norm": 115.66197335836726,
+        "std_norm": 82.63956227780272
+      }
+    },
+    "relative_differences": {
+      "3c_to_4c": {
+        "mean_rel_diff": 0.06666461160261339,
+        "max_rel_diff": 0.3360633204260361
+      },
+      "4c_to_5c": {
+        "mean_rel_diff": 0.18501103622539022,
+        "max_rel_diff": 0.5629437226532179
+      },
+      "3c_to_5c": {
+        "mean_rel_diff": 0.2298569648968606,
+        "max_rel_diff": 0.5627886358757185
+      }
+    }
+  }
+]

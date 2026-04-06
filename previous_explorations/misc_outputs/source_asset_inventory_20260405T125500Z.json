@@ -1,0 +1,45 @@
+{
+  "ds004752_openneuro": {
+    "anat_files": 0,
+    "electrodes_tsv": 68,
+    "electrodes_json": 68,
+    "eeg_channels_tsv": 68,
+    "ieeg_channels_tsv": 68
+  },
+  "geneva_hidden_ieds": {
+    "anat_t1w": 8,
+    "ct": 0,
+    "scalp_electrodes": 8,
+    "ieeg_electrodes": 16,
+    "forward_like": 0
+  },
+  "milan_spes": {
+    "anat_t1w": 36,
+    "ct": 0,
+    "scalp_electrodes": 36,
+    "ieeg_electrodes": 72,
+    "forward_like": 0
+  },
+  "localize_mi": {
+    "anat_t1w": 7,
+    "ct": 0,
+    "scalp_electrodes": 7,
+    "ieeg_electrodes": 28,
+    "forward_like": 84
+  },
+  "zurich_gin_wm": {
+    "anat_t1w": 0,
+    "ct": 0,
+    "scalp_electrodes": 0,
+    "ieeg_electrodes": 0,
+    "forward_like": 0
+  },
+  "piastra_2024_partial": {
+    "anat_t1w": 3,
+    "ct": 6,
+    "scalp_electrodes": 0,
+    "ieeg_electrodes": 3,
+    "forward_like": 27,
+    "file_count": 213
+  }
+}

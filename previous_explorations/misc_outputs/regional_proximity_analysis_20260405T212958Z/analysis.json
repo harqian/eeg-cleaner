@@ -1,0 +1,44 @@
+{
+  "forward_model_depth": {
+    "source": "/Users/hq/code/eeg_cleaner/outputs/forward_model_probe_20260405T211520Z",
+    "total_runs": 61,
+    "depth_bins": {
+      "0-2mm": {
+        "run_count": 27,
+        "fwd_corr_mean": 0.35476800844799583,
+        "fwd_corr_max": 0.8007521624442422,
+        "interp_corr_mean": 0.8769280858888207,
+        "beats_interp_frac": 0.0,
+        "fwd_interp_gap": -0.5221600774408248
+      },
+      "2-4mm": {
+        "run_count": 34,
+        "fwd_corr_mean": 0.32396436781493376,
+        "fwd_corr_max": 0.7463673260084485,
+        "interp_corr_mean": 0.8733838259463683,
+        "beats_interp_frac": 0.0,
+        "fwd_interp_gap": -0.5494194581314346
+      }
+    }
+  },
+  "zurich_ieeg_proximity": {
+    "source": "/Users/hq/code/eeg_cleaner/outputs/paired_ieeg_scalp_probe_batch_20260405T164236Z",
+    "total_runs": 181,
+    "ieeg_count_bins": {
+      "1-50": {
+        "run_count": 63,
+        "probe_corr_mean": 0.2729312901247774,
+        "interp_corr_mean": 0.5842931795785413,
+        "probe_advantage_mean": -0.3113618894537638
+      },
+      "50-100": {
+        "run_count": 118,
+        "probe_corr_mean": 0.2821798442192129,
+        "interp_corr_mean": 0.5267107346962514,
+        "probe_advantage_mean": -0.2445308904770385
+      }
+    },
+    "corr_ieeg_count_vs_advantage": 0.10344088204988892
+  },
+  "completed_at_utc": "2026-04-05T21:29:58.620255+00:00"
+}

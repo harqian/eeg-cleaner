@@ -1,0 +1,80 @@
+[
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-01",
+    "description": "Stimulation of channel K13-14 1mA",
+    "stim_contacts": [
+      "K13",
+      "K14"
+    ],
+    "dipole_pos_m": [
+      0.047305,
+      -0.017225,
+      0.053500000000000006
+    ],
+    "nearest_source_dist_m": 0.0019012431684617564,
+    "epoch_count": 38,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2048,
+    "peak_latency_ms": 6.0,
+    "topo_corr_peak_abs": 0.5062518541963648,
+    "topo_corr_peak_signed": -0.5062518541963648,
+    "topo_corr_rms": 0.5722340489613954,
+    "interp_topo_corr": 0.9042216715544259,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:41:23.421049+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-02",
+    "description": "Stimulation of channel K13-14 5mA",
+    "stim_contacts": [
+      "K13",
+      "K14"
+    ],
+    "dipole_pos_m": [
+      0.047305,
+      -0.017225,
+      0.053500000000000006
+    ],
+    "nearest_source_dist_m": 0.0019012431684617564,
+    "epoch_count": 36,
+    "eeg_channel_count": 235,
+    "matched_channel_count": 235,
+    "peak_sample": 2046,
+    "peak_latency_ms": 5.75,
+    "topo_corr_peak_abs": 0.5037914282266583,
+    "topo_corr_peak_signed": -0.5037914282266583,
+    "topo_corr_rms": 0.4949611205388385,
+    "interp_topo_corr": 0.9179848833109602,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:41:24.316480+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-03",
+    "description": "Stimulation of channel N2-3 1mA",
+    "stim_contacts": [
+      "N2",
+      "N3"
+    ],
+    "dipole_pos_m": [
+      0.00932,
+      -0.038669999999999996,
+      0.06003
+    ],
+    "nearest_source_dist_m": 0.001861240125663368,
+    "epoch_count": 38,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2066,
+    "peak_latency_ms": 8.25,
+    "topo_corr_peak_abs": 0.5597584624886773,
+    "topo_corr_peak_signed": -0.5597584624886773,
+    "topo_corr_rms": 0.525045894828481,
+    "interp_topo_corr": 0.9403015511909608,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:41:25.240915+00:00"
+  }
+]

@@ -1,0 +1,29 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 11166    0 11166    0     0  10283      0 --:--:--  0:00:01 --:--:-- 10291
+Traceback (most recent call last):
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 559, in <module>
+    main()
+    ~~~~^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 540, in main
+    results.append(fetch_piastra_2024_metadata(force=args.force, download_archive=args.download_piastra_archive))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 332, in fetch_piastra_2024_metadata
+    download_webdav_tree(base_url, base_url, archive_dir, force=force, visited=set())
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 287, in download_webdav_tree
+    download_webdav_tree(base_url, child_url, target_dir, force=force, visited=visited)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 287, in download_webdav_tree
+    download_webdav_tree(base_url, child_url, target_dir, force=force, visited=visited)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 291, in download_webdav_tree
+    download_with_curl(child_url, target_path, force=force)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 204, in download_with_curl
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/pathlib/__init__.py", line 1016, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '/Users/hq/code/eeg_cleaner/data/external/piastra_2024/archive/data'

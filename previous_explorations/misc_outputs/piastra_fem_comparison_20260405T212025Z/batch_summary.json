@@ -1,0 +1,32 @@
+{
+  "subject_count": 3,
+  "compartments_compared": [
+    3,
+    4,
+    5
+  ],
+  "aggregate_pairwise_correlation": {
+    "3c_vs_4c": {
+      "grand_mean_corr": 0.9954357493693626
+    },
+    "4c_vs_5c": {
+      "grand_mean_corr": 0.9935045820354501
+    },
+    "3c_vs_5c": {
+      "grand_mean_corr": 0.9883828443244869
+    }
+  },
+  "aggregate_relative_differences": {
+    "3c_to_4c": {
+      "grand_mean_rel_diff": 0.06765452024860291
+    },
+    "4c_to_5c": {
+      "grand_mean_rel_diff": 0.17459819766288653
+    },
+    "3c_to_5c": {
+      "grand_mean_rel_diff": 0.21401023868516356
+    }
+  },
+  "completed_at_utc": "2026-04-05T21:20:25.836837+00:00",
+  "interpretation": "if 3c_vs_5c correlation is very high (>0.95) and relative difference is small (<0.1), then adding compartments (CSF, white matter distinction) makes little difference, meaning the forward model limitation is NOT about skull modeling."
+}

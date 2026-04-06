@@ -1,0 +1,76 @@
+{
+  "subject_count": 7,
+  "total_runs": 61,
+  "dist_mod-T1w_raw_mm": {
+    "mean": 2.1,
+    "median": 2.21,
+    "min": 0.51,
+    "max": 3.91
+  },
+  "dist_mod-T1w_via_mri_head_t_mm": {
+    "mean": 4.38,
+    "median": 3.67,
+    "min": 0.22,
+    "max": 16.79
+  },
+  "dist_mod-T1w_vs_mri_sources_mm": {
+    "mean": 4.38,
+    "median": 3.67,
+    "min": 0.22,
+    "max": 16.79
+  },
+  "dist_MNI152NLin2009aSym_raw_mm": {
+    "mean": 14.69,
+    "median": 7.55,
+    "min": 1.73,
+    "max": 60.12
+  },
+  "dist_MNI152NLin2009aSym_via_mri_head_t_mm": {
+    "mean": 8.84,
+    "median": 4.29,
+    "min": 0.53,
+    "max": 38.09
+  },
+  "dist_MNI152NLin2009aSym_vs_mri_sources_mm": {
+    "mean": 8.84,
+    "median": 4.29,
+    "min": 0.53,
+    "max": 38.09
+  },
+  "dist_T1w_raw_mm": {
+    "mean": 2.1,
+    "median": 2.21,
+    "min": 0.51,
+    "max": 3.91
+  },
+  "dist_T1w_via_mri_head_t_mm": {
+    "mean": 4.38,
+    "median": 3.67,
+    "min": 0.22,
+    "max": 16.79
+  },
+  "dist_T1w_vs_mri_sources_mm": {
+    "mean": 4.38,
+    "median": 3.67,
+    "min": 0.22,
+    "max": 16.79
+  },
+  "dist_surface_raw_mm": {
+    "mean": 5.91,
+    "median": 3.55,
+    "min": 1.21,
+    "max": 30.52
+  },
+  "dist_surface_via_mri_head_t_mm": {
+    "mean": 2.1,
+    "median": 2.19,
+    "min": 0.51,
+    "max": 3.91
+  },
+  "dist_surface_vs_mri_sources_mm": {
+    "mean": 2.1,
+    "median": 2.19,
+    "min": 0.51,
+    "max": 3.91
+  }
+}

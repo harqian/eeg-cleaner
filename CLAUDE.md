@@ -1,1 +1,1 @@
-see `AGENTS.md` for the research charter, validation scope, and working rules for this repo.
+see `AGENTS.md` for the experiment log for this research repo.

@@ -1,0 +1,1588 @@
+[
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-01",
+    "description": "Stimulation of channel K13-14 1mA",
+    "stim_contacts": [
+      "K13",
+      "K14"
+    ],
+    "dipole_pos_m": [
+      0.047305,
+      -0.017225,
+      0.053500000000000006
+    ],
+    "nearest_source_dist_m": 0.0019012431684617564,
+    "epoch_count": 38,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2048,
+    "peak_latency_ms": 6.0,
+    "topo_corr_peak_abs": 0.5062518541963648,
+    "topo_corr_peak_signed": -0.5062518541963648,
+    "topo_corr_rms": 0.5722340489613954,
+    "interp_topo_corr": 0.9042216715544259,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:08.326635+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-02",
+    "description": "Stimulation of channel K13-14 5mA",
+    "stim_contacts": [
+      "K13",
+      "K14"
+    ],
+    "dipole_pos_m": [
+      0.047305,
+      -0.017225,
+      0.053500000000000006
+    ],
+    "nearest_source_dist_m": 0.0019012431684617564,
+    "epoch_count": 36,
+    "eeg_channel_count": 235,
+    "matched_channel_count": 235,
+    "peak_sample": 2046,
+    "peak_latency_ms": 5.75,
+    "topo_corr_peak_abs": 0.5037914282266583,
+    "topo_corr_peak_signed": -0.5037914282266583,
+    "topo_corr_rms": 0.4949611205388385,
+    "interp_topo_corr": 0.9179848833109602,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:09.146281+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-03",
+    "description": "Stimulation of channel N2-3 1mA",
+    "stim_contacts": [
+      "N2",
+      "N3"
+    ],
+    "dipole_pos_m": [
+      0.00932,
+      -0.038669999999999996,
+      0.06003
+    ],
+    "nearest_source_dist_m": 0.001861240125663368,
+    "epoch_count": 38,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2066,
+    "peak_latency_ms": 8.25,
+    "topo_corr_peak_abs": 0.5597584624886773,
+    "topo_corr_peak_signed": -0.5597584624886773,
+    "topo_corr_rms": 0.525045894828481,
+    "interp_topo_corr": 0.9403015511909608,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:09.980601+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-04",
+    "description": "Stimulation of channel N2-3 5mA",
+    "stim_contacts": [
+      "N2",
+      "N3"
+    ],
+    "dipole_pos_m": [
+      0.00932,
+      -0.038669999999999996,
+      0.06003
+    ],
+    "nearest_source_dist_m": 0.001861240125663368,
+    "epoch_count": 36,
+    "eeg_channel_count": 231,
+    "matched_channel_count": 231,
+    "peak_sample": 2075,
+    "peak_latency_ms": 9.375,
+    "topo_corr_peak_abs": 0.7659427160297305,
+    "topo_corr_peak_signed": -0.7659427160297305,
+    "topo_corr_rms": 0.22570896256908834,
+    "interp_topo_corr": 0.9660898225238621,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:10.804398+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-05",
+    "description": "Stimulation of channel N10-11 1mA",
+    "stim_contacts": [
+      "N10",
+      "N11"
+    ],
+    "dipole_pos_m": [
+      0.041580000000000006,
+      -0.035295,
+      0.06711500000000001
+    ],
+    "nearest_source_dist_m": 0.0034645785805119717,
+    "epoch_count": 39,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2080,
+    "peak_latency_ms": 10.0,
+    "topo_corr_peak_abs": 0.1573898884449068,
+    "topo_corr_peak_signed": 0.1573898884449068,
+    "topo_corr_rms": 0.035673606417304805,
+    "interp_topo_corr": 0.924345014536518,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:11.844155+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-06",
+    "description": "Stimulation of channel S1-2 1mA",
+    "stim_contacts": [
+      "S1",
+      "S2"
+    ],
+    "dipole_pos_m": [
+      0.036500000000000005,
+      -0.01507,
+      0.014284999999999999
+    ],
+    "nearest_source_dist_m": 0.003514300669040784,
+    "epoch_count": 27,
+    "eeg_channel_count": 234,
+    "matched_channel_count": 234,
+    "peak_sample": 2080,
+    "peak_latency_ms": 10.0,
+    "topo_corr_peak_abs": 0.3967570138197393,
+    "topo_corr_peak_signed": 0.3967570138197393,
+    "topo_corr_rms": 0.3228097341028365,
+    "interp_topo_corr": 0.8640808514145656,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:12.690058+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-07",
+    "description": "Stimulation of channel S1-2 5mA",
+    "stim_contacts": [
+      "S1",
+      "S2"
+    ],
+    "dipole_pos_m": [
+      0.036500000000000005,
+      -0.01507,
+      0.014284999999999999
+    ],
+    "nearest_source_dist_m": 0.003514300669040784,
+    "epoch_count": 34,
+    "eeg_channel_count": 234,
+    "matched_channel_count": 234,
+    "peak_sample": 2080,
+    "peak_latency_ms": 10.0,
+    "topo_corr_peak_abs": 0.574316739346216,
+    "topo_corr_peak_signed": 0.574316739346216,
+    "topo_corr_rms": 0.05655021644632311,
+    "interp_topo_corr": 0.9594526048418918,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:13.535441+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-08",
+    "description": "Stimulation of channel S3-4 1mA",
+    "stim_contacts": [
+      "S3",
+      "S4"
+    ],
+    "dipole_pos_m": [
+      0.044885,
+      -0.01612,
+      0.01654
+    ],
+    "nearest_source_dist_m": 0.0026515025233022076,
+    "epoch_count": 35,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2069,
+    "peak_latency_ms": 8.625,
+    "topo_corr_peak_abs": 0.6551354427176699,
+    "topo_corr_peak_signed": 0.6551354427176699,
+    "topo_corr_rms": 0.5673002380590962,
+    "interp_topo_corr": 0.913623511275856,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:14.374069+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-09",
+    "description": "Stimulation of channel S3-4 5mA",
+    "stim_contacts": [
+      "S3",
+      "S4"
+    ],
+    "dipole_pos_m": [
+      0.044885,
+      -0.01612,
+      0.01654
+    ],
+    "nearest_source_dist_m": 0.0026515025233022076,
+    "epoch_count": 36,
+    "eeg_channel_count": 234,
+    "matched_channel_count": 234,
+    "peak_sample": 2080,
+    "peak_latency_ms": 10.0,
+    "topo_corr_peak_abs": 0.5034744328461608,
+    "topo_corr_peak_signed": 0.5034744328461608,
+    "topo_corr_rms": 0.5683062010226161,
+    "interp_topo_corr": 0.9521265594908023,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:15.233508+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-10",
+    "description": "Stimulation of channel S5-6 1mA",
+    "stim_contacts": [
+      "S5",
+      "S6"
+    ],
+    "dipole_pos_m": [
+      0.05348,
+      -0.016785,
+      0.018865
+    ],
+    "nearest_source_dist_m": 0.0032907194749222,
+    "epoch_count": 38,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2076,
+    "peak_latency_ms": 9.5,
+    "topo_corr_peak_abs": 0.009364859730547744,
+    "topo_corr_peak_signed": 0.009364859730547744,
+    "topo_corr_rms": 0.263010234093383,
+    "interp_topo_corr": 0.7687521687684927,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:16.104466+00:00"
+  },
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-11",
+    "description": "Stimulation of channel S5-6 5mA",
+    "stim_contacts": [
+      "S5",
+      "S6"
+    ],
+    "dipole_pos_m": [
+      0.05348,
+      -0.016785,
+      0.018865
+    ],
+    "nearest_source_dist_m": 0.0032907194749222,
+    "epoch_count": 32,
+    "eeg_channel_count": 232,
+    "matched_channel_count": 232,
+    "peak_sample": 2080,
+    "peak_latency_ms": 10.0,
+    "topo_corr_peak_abs": 0.7024620904201343,
+    "topo_corr_peak_signed": 0.7024620904201343,
+    "topo_corr_rms": 0.63511566151264,
+    "interp_topo_corr": 0.9478475452554801,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:16.994385+00:00"
+  },
+  {
+    "subject": "sub-02",
+    "run": "sub-02_task-seegstim_run-01",
+    "description": "Stimulation of channel X'1-2 1mA",
+    "stim_contacts": [
+      "X'1",
+      "X'2"
+    ],
+    "dipole_pos_m": [
+      -0.031435,
+      0.019065,
+      0.00372
+    ],
+    "nearest_source_dist_m": 0.012628630962602127,
+    "epoch_count": 43,
+    "eeg_channel_count": 199,
+    "matched_channel_count": 199,
+    "peak_sample": 2043,
+    "peak_latency_ms": 5.375,
+    "topo_corr_peak_abs": 0.44520878782600926,
+    "topo_corr_peak_signed": 0.44520878782600926,
+    "topo_corr_rms": 0.008698853136286372,
+    "interp_topo_corr": 0.9221902050287625,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:17.943538+00:00"
+  },
+  {
+    "subject": "sub-02",
+    "run": "sub-02_task-seegstim_run-02",
+    "description": "Stimulation of channel X'1-2 0.5mA",
+    "stim_contacts": [
+      "X'1",
+      "X'2"
+    ],
+    "dipole_pos_m": [
+      -0.031435,
+      0.019065,
+      0.00372
+    ],
+    "nearest_source_dist_m": 0.012628630962602127,
+    "epoch_count": 48,
+    "eeg_channel_count": 198,
+    "matched_channel_count": 198,
+    "peak_sample": 2079,
+    "peak_latency_ms": 9.875,
+    "topo_corr_peak_abs": 0.21470148795958766,
+    "topo_corr_peak_signed": 0.21470148795958766,
+    "topo_corr_rms": 0.022555515437647677,
+    "interp_topo_corr": 0.9525668237979296,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:18.790899+00:00"
+  },
+  {
+    "subject": "sub-02",
+    "run": "sub-02_task-seegstim_run-03",
+    "description": "Stimulation of channel X'4-5 1mA",
+    "stim_contacts": [
+      "X'4",
+      "X'5"
+    ],
+    "dipole_pos_m": [
+      -0.042515,
+      0.020105,
+      0.007039999999999999
+    ],
+    "nearest_source_dist_m": 0.009177472165108589,
+    "epoch_count": 45,
+    "eeg_channel_count": 197,
+    "matched_channel_count": 197,
+    "peak_sample": 2070,
+    "peak_latency_ms": 8.75,
+    "topo_corr_peak_abs": 0.6710934791493134,
+    "topo_corr_peak_signed": -0.6710934791493134,
+    "topo_corr_rms": 0.6541228558959405,
+    "interp_topo_corr": 0.9354570648712561,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:19.542808+00:00"
+  },
+  {
+    "subject": "sub-02",
+    "run": "sub-02_task-seegstim_run-04",
+    "description": "Stimulation of channel X'4-5 0.5mA",
+    "stim_contacts": [
+      "X'4",
+      "X'5"
+    ],
+    "dipole_pos_m": [
+      -0.042515,
+      0.020105,
+      0.007039999999999999
+    ],
+    "nearest_source_dist_m": 0.009177472165108589,
+    "epoch_count": 47,
+    "eeg_channel_count": 198,
+    "matched_channel_count": 198,
+    "peak_sample": 2074,
+    "peak_latency_ms": 9.25,
+    "topo_corr_peak_abs": 0.35164347552144964,
+    "topo_corr_peak_signed": -0.35164347552144964,
+    "topo_corr_rms": 0.48484058822590687,
+    "interp_topo_corr": 0.8447258640552624,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:20.307945+00:00"
+  },
+  {
+    "subject": "sub-02",
+    "run": "sub-02_task-seegstim_run-05",
+    "description": "Stimulation of channel X'8-9 1mA",
+    "stim_contacts": [
+      "X'8",
+      "X'9"
+    ],
+    "dipole_pos_m": [
+      -0.055764999999999995,
+      0.02278,
+      0.013649999999999999
+    ],
+    "nearest_source_dist_m": 0.012034427750655862,
+    "epoch_count": 52,
+    "eeg_channel_count": 195,
+    "matched_channel_count": 195,
+    "peak_sample": 2069,
+    "peak_latency_ms": 8.625,
+    "topo_corr_peak_abs": 0.467935443024497,
+    "topo_corr_peak_signed": -0.467935443024497,
+    "topo_corr_rms": 0.4891019822464641,
+    "interp_topo_corr": 0.8715138746528232,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:21.166333+00:00"
+  },
+  {
+    "subject": "sub-02",
+    "run": "sub-02_task-seegstim_run-06",
+    "description": "Stimulation of channel X'8-9 0.5mA",
+    "stim_contacts": [
+      "X'8",
+      "X'9"
+    ],
+    "dipole_pos_m": [
+      -0.055764999999999995,
+      0.02278,
+      0.013649999999999999
+    ],
+    "nearest_source_dist_m": 0.012034427750655862,
+    "epoch_count": 42,
+    "eeg_channel_count": 198,
+    "matched_channel_count": 198,
+    "peak_sample": 2047,
+    "peak_latency_ms": 5.875,
+    "topo_corr_peak_abs": 0.30474232201990425,
+    "topo_corr_peak_signed": -0.30474232201990425,
+    "topo_corr_rms": 0.41415330206925793,
+    "interp_topo_corr": 0.905082631387192,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:21.939701+00:00"
+  },
+  {
+    "subject": "sub-03",
+    "run": "sub-03_task-seegstim_run-01",
+    "description": "Stimulation of channel B'13-14 0.5mA",
+    "stim_contacts": [
+      "B'13",
+      "B'14"
+    ],
+    "dipole_pos_m": [
+      -0.06653500000000001,
+      -0.015125,
+      -0.01626
+    ],
+    "nearest_source_dist_m": 0.02346171611156762,
+    "epoch_count": 41,
+    "eeg_channel_count": 223,
+    "matched_channel_count": 223,
+    "peak_sample": 2062,
+    "peak_latency_ms": 7.75,
+    "topo_corr_peak_abs": 0.0979928839456008,
+    "topo_corr_peak_signed": 0.0979928839456008,
+    "topo_corr_rms": 0.19448821685931136,
+    "interp_topo_corr": 0.9169658535565828,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:22.907458+00:00"
+  },
+  {
+    "subject": "sub-03",
+    "run": "sub-03_task-seegstim_run-02",
+    "description": "Stimulation of channel H'1-2 0.5mA",
+    "stim_contacts": [
+      "H'1",
+      "H'2"
+    ],
+    "dipole_pos_m": [
+      -0.03608,
+      -0.03102,
+      0.015465
+    ],
+    "nearest_source_dist_m": 0.0021397056657022225,
+    "epoch_count": 29,
+    "eeg_channel_count": 216,
+    "matched_channel_count": 216,
+    "peak_sample": 2072,
+    "peak_latency_ms": 9.0,
+    "topo_corr_peak_abs": 0.3098499497055267,
+    "topo_corr_peak_signed": -0.3098499497055267,
+    "topo_corr_rms": 0.22383731298484405,
+    "interp_topo_corr": 0.912547239299446,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:23.739088+00:00"
+  },
+  {
+    "subject": "sub-03",
+    "run": "sub-03_task-seegstim_run-03",
+    "description": "Stimulation of channel H'8-9 0.5mA",
+    "stim_contacts": [
+      "H'8",
+      "H'9"
+    ],
+    "dipole_pos_m": [
+      -0.062275,
+      -0.039834999999999995,
+      0.016125
+    ],
+    "nearest_source_dist_m": 0.0022573173167303043,
+    "epoch_count": 30,
+    "eeg_channel_count": 219,
+    "matched_channel_count": 219,
+    "peak_sample": 2045,
+    "peak_latency_ms": 5.625,
+    "topo_corr_peak_abs": 0.19469105521238156,
+    "topo_corr_peak_signed": 0.19469105521238156,
+    "topo_corr_rms": 0.06521997606748352,
+    "interp_topo_corr": 0.9298565306416418,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:24.531296+00:00"
+  },
+  {
+    "subject": "sub-03",
+    "run": "sub-03_task-seegstim_run-04",
+    "description": "Stimulation of channel R'2-3 0.3mA",
+    "stim_contacts": [
+      "R'2",
+      "R'3"
+    ],
+    "dipole_pos_m": [
+      -0.039955,
+      0.000935,
+      0.00462
+    ],
+    "nearest_source_dist_m": 0.00215063708215328,
+    "epoch_count": 35,
+    "eeg_channel_count": 212,
+    "matched_channel_count": 212,
+    "peak_sample": 2061,
+    "peak_latency_ms": 7.625,
+    "topo_corr_peak_abs": 0.19063210447319018,
+    "topo_corr_peak_signed": 0.19063210447319018,
+    "topo_corr_rms": 0.09507861039888019,
+    "interp_topo_corr": 0.8805486103344712,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:25.328449+00:00"
+  },
+  {
+    "subject": "sub-03",
+    "run": "sub-03_task-seegstim_run-05",
+    "description": "Stimulation of channel R'2-3 0.5mA",
+    "stim_contacts": [
+      "R'2",
+      "R'3"
+    ],
+    "dipole_pos_m": [
+      -0.039955,
+      0.000935,
+      0.00462
+    ],
+    "nearest_source_dist_m": 0.00215063708215328,
+    "epoch_count": 42,
+    "eeg_channel_count": 217,
+    "matched_channel_count": 217,
+    "peak_sample": 2057,
+    "peak_latency_ms": 7.125,
+    "topo_corr_peak_abs": 0.009551024752875375,
+    "topo_corr_peak_signed": 0.009551024752875375,
+    "topo_corr_rms": 0.6033589881107811,
+    "interp_topo_corr": 0.8797041250376807,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:26.210345+00:00"
+  },
+  {
+    "subject": "sub-03",
+    "run": "sub-03_task-seegstim_run-06",
+    "description": "Stimulation of channel R'7-8 0.3mA",
+    "stim_contacts": [
+      "R'7",
+      "R'8"
+    ],
+    "dipole_pos_m": [
+      -0.059025,
+      0.00615,
+      0.006985
+    ],
+    "nearest_source_dist_m": 0.0030562743252260643,
+    "epoch_count": 32,
+    "eeg_channel_count": 211,
+    "matched_channel_count": 211,
+    "peak_sample": 2075,
+    "peak_latency_ms": 9.375,
+    "topo_corr_peak_abs": 0.39209685928236554,
+    "topo_corr_peak_signed": 0.39209685928236554,
+    "topo_corr_rms": 0.3585521904927237,
+    "interp_topo_corr": 0.9399757833829306,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:27.031895+00:00"
+  },
+  {
+    "subject": "sub-03",
+    "run": "sub-03_task-seegstim_run-07",
+    "description": "Stimulation of channel R'7-8 0.5mA",
+    "stim_contacts": [
+      "R'7",
+      "R'8"
+    ],
+    "dipole_pos_m": [
+      -0.059025,
+      0.00615,
+      0.006985
+    ],
+    "nearest_source_dist_m": 0.0030562743252260643,
+    "epoch_count": 36,
+    "eeg_channel_count": 215,
+    "matched_channel_count": 215,
+    "peak_sample": 2048,
+    "peak_latency_ms": 6.0,
+    "topo_corr_peak_abs": 0.7470591903044684,
+    "topo_corr_peak_signed": 0.7470591903044684,
+    "topo_corr_rms": 0.7271106527008798,
+    "interp_topo_corr": 0.9486232563192436,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:27.870696+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-01",
+    "description": "Stimulation of channel O1-2 0.1mA",
+    "stim_contacts": [
+      "O1",
+      "O2"
+    ],
+    "dipole_pos_m": [
+      0.005015,
+      -0.07927999999999999,
+      0.012425
+    ],
+    "nearest_source_dist_m": 0.002727360519874036,
+    "epoch_count": 39,
+    "eeg_channel_count": 246,
+    "matched_channel_count": 246,
+    "peak_sample": 2066,
+    "peak_latency_ms": 8.25,
+    "topo_corr_peak_abs": 0.4238862481127388,
+    "topo_corr_peak_signed": -0.4238862481127388,
+    "topo_corr_rms": 0.2915705081417612,
+    "interp_topo_corr": 0.7548876000485666,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:28.802128+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-02",
+    "description": "Stimulation of channel O1-2 0.3mA",
+    "stim_contacts": [
+      "O1",
+      "O2"
+    ],
+    "dipole_pos_m": [
+      0.005015,
+      -0.07927999999999999,
+      0.012425
+    ],
+    "nearest_source_dist_m": 0.002727360519874036,
+    "epoch_count": 33,
+    "eeg_channel_count": 241,
+    "matched_channel_count": 241,
+    "peak_sample": 2068,
+    "peak_latency_ms": 8.5,
+    "topo_corr_peak_abs": 0.42483022632247813,
+    "topo_corr_peak_signed": -0.42483022632247813,
+    "topo_corr_rms": 0.2299397083367955,
+    "interp_topo_corr": 0.8574965306046565,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:29.670077+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-03",
+    "description": "Stimulation of channel O9-10 0.1mA",
+    "stim_contacts": [
+      "O9",
+      "O10"
+    ],
+    "dipole_pos_m": [
+      0.04002,
+      -0.08668000000000001,
+      0.0045850000000000005
+    ],
+    "nearest_source_dist_m": 0.016777880540557618,
+    "epoch_count": 39,
+    "eeg_channel_count": 243,
+    "matched_channel_count": 243,
+    "peak_sample": 2075,
+    "peak_latency_ms": 9.375,
+    "topo_corr_peak_abs": 0.27287274615478413,
+    "topo_corr_peak_signed": -0.27287274615478413,
+    "topo_corr_rms": 0.3331042736272742,
+    "interp_topo_corr": 0.8611855397180307,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:30.585922+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-04",
+    "description": "Stimulation of channel O9-10 0.3mA",
+    "stim_contacts": [
+      "O9",
+      "O10"
+    ],
+    "dipole_pos_m": [
+      0.04002,
+      -0.08668000000000001,
+      0.0045850000000000005
+    ],
+    "nearest_source_dist_m": 0.016777880540557618,
+    "epoch_count": 44,
+    "eeg_channel_count": 241,
+    "matched_channel_count": 241,
+    "peak_sample": 2054,
+    "peak_latency_ms": 6.75,
+    "topo_corr_peak_abs": 0.08507675887326963,
+    "topo_corr_peak_signed": 0.08507675887326963,
+    "topo_corr_rms": 0.003308854729372527,
+    "interp_topo_corr": 0.7121296408503924,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:31.622783+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-05",
+    "description": "Stimulation of channel P1-2 0.1mA",
+    "stim_contacts": [
+      "P1",
+      "P2"
+    ],
+    "dipole_pos_m": [
+      0.004495000000000001,
+      -0.054735,
+      0.042085
+    ],
+    "nearest_source_dist_m": 0.002412949516350846,
+    "epoch_count": 41,
+    "eeg_channel_count": 237,
+    "matched_channel_count": 237,
+    "peak_sample": 2063,
+    "peak_latency_ms": 7.875,
+    "topo_corr_peak_abs": 0.015622308487848907,
+    "topo_corr_peak_signed": 0.015622308487848907,
+    "topo_corr_rms": 0.3235129213568872,
+    "interp_topo_corr": 0.8182529753994081,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:32.541471+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-06",
+    "description": "Stimulation of channel P8-9 0.1mA",
+    "stim_contacts": [
+      "P8",
+      "P9"
+    ],
+    "dipole_pos_m": [
+      0.03292,
+      -0.058955,
+      0.040225
+    ],
+    "nearest_source_dist_m": 0.0024876631257458566,
+    "epoch_count": 48,
+    "eeg_channel_count": 235,
+    "matched_channel_count": 235,
+    "peak_sample": 2080,
+    "peak_latency_ms": 10.0,
+    "topo_corr_peak_abs": 0.19607999695977738,
+    "topo_corr_peak_signed": -0.19607999695977738,
+    "topo_corr_rms": 0.1669605513412351,
+    "interp_topo_corr": 0.7988713665532441,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:33.457190+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-07",
+    "description": "Stimulation of channel P12-13 0.1mA",
+    "stim_contacts": [
+      "P12",
+      "P13"
+    ],
+    "dipole_pos_m": [
+      0.04976,
+      -0.05941,
+      0.042415
+    ],
+    "nearest_source_dist_m": 0.010004079958688045,
+    "epoch_count": 38,
+    "eeg_channel_count": 245,
+    "matched_channel_count": 245,
+    "peak_sample": 2079,
+    "peak_latency_ms": 9.875,
+    "topo_corr_peak_abs": 0.35240429625845554,
+    "topo_corr_peak_signed": 0.35240429625845554,
+    "topo_corr_rms": 0.28050538896255545,
+    "interp_topo_corr": 0.8003775924335865,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:34.399715+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-08",
+    "description": "Stimulation of channel W'2-3 0.1mA",
+    "stim_contacts": [
+      "W'2",
+      "W'3"
+    ],
+    "dipole_pos_m": [
+      -0.041005,
+      -0.023535,
+      0.005835
+    ],
+    "nearest_source_dist_m": 0.0046883551865490826,
+    "epoch_count": 48,
+    "eeg_channel_count": 227,
+    "matched_channel_count": 227,
+    "peak_sample": 2058,
+    "peak_latency_ms": 7.25,
+    "topo_corr_peak_abs": 0.07775406020239721,
+    "topo_corr_peak_signed": -0.07775406020239721,
+    "topo_corr_rms": 0.07158399467106817,
+    "interp_topo_corr": 0.633306601686959,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:35.314701+00:00"
+  },
+  {
+    "subject": "sub-04",
+    "run": "sub-04_task-seegstim_run-09",
+    "description": "Stimulation of channel W'7-8 0.1mA",
+    "stim_contacts": [
+      "W'7",
+      "W'8"
+    ],
+    "dipole_pos_m": [
+      -0.06297,
+      -0.0216,
+      0.006125
+    ],
+    "nearest_source_dist_m": 0.004486170222680175,
+    "epoch_count": 48,
+    "eeg_channel_count": 230,
+    "matched_channel_count": 230,
+    "peak_sample": 2067,
+    "peak_latency_ms": 8.375,
+    "topo_corr_peak_abs": 0.002256231209240579,
+    "topo_corr_peak_signed": -0.002256231209240579,
+    "topo_corr_rms": 0.03739018381506866,
+    "interp_topo_corr": 0.8931681516040612,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:36.330132+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-01",
+    "description": "Stimulation of channel G'8-9 0.1mA",
+    "stim_contacts": [
+      "G'8",
+      "G'9"
+    ],
+    "dipole_pos_m": [
+      -0.040875,
+      0.051955,
+      0.018535
+    ],
+    "nearest_source_dist_m": 0.01365535517859406,
+    "epoch_count": 44,
+    "eeg_channel_count": 216,
+    "matched_channel_count": 216,
+    "peak_sample": 2055,
+    "peak_latency_ms": 6.875,
+    "topo_corr_peak_abs": 0.17939572738154805,
+    "topo_corr_peak_signed": -0.17939572738154805,
+    "topo_corr_rms": 0.14126030195190203,
+    "interp_topo_corr": 0.887696241911776,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:37.235002+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-02",
+    "description": "Stimulation of channel G'8-9 0.3mA",
+    "stim_contacts": [
+      "G'8",
+      "G'9"
+    ],
+    "dipole_pos_m": [
+      -0.040875,
+      0.051955,
+      0.018535
+    ],
+    "nearest_source_dist_m": 0.01365535517859406,
+    "epoch_count": 43,
+    "eeg_channel_count": 209,
+    "matched_channel_count": 209,
+    "peak_sample": 2041,
+    "peak_latency_ms": 5.125,
+    "topo_corr_peak_abs": 0.514854210088661,
+    "topo_corr_peak_signed": 0.514854210088661,
+    "topo_corr_rms": 0.363860195064083,
+    "interp_topo_corr": 0.8407298792837679,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:38.038621+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-03",
+    "description": "Stimulation of channel H'2-3 0.1mA",
+    "stim_contacts": [
+      "H'2",
+      "H'3"
+    ],
+    "dipole_pos_m": [
+      -0.00631,
+      0.029075,
+      0.028045
+    ],
+    "nearest_source_dist_m": 0.007548309359052365,
+    "epoch_count": 42,
+    "eeg_channel_count": 214,
+    "matched_channel_count": 214,
+    "peak_sample": 2064,
+    "peak_latency_ms": 8.0,
+    "topo_corr_peak_abs": 0.5023679743879134,
+    "topo_corr_peak_signed": 0.5023679743879134,
+    "topo_corr_rms": 0.538498004367501,
+    "interp_topo_corr": 0.8434603068774601,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:38.935054+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-04",
+    "description": "Stimulation of channel H'2-3 0.3mA",
+    "stim_contacts": [
+      "H'2",
+      "H'3"
+    ],
+    "dipole_pos_m": [
+      -0.00631,
+      0.029075,
+      0.028045
+    ],
+    "nearest_source_dist_m": 0.007548309359052365,
+    "epoch_count": 44,
+    "eeg_channel_count": 214,
+    "matched_channel_count": 214,
+    "peak_sample": 2061,
+    "peak_latency_ms": 7.625,
+    "topo_corr_peak_abs": 0.3188320967067083,
+    "topo_corr_peak_signed": 0.3188320967067083,
+    "topo_corr_rms": 0.4900813370748968,
+    "interp_topo_corr": 0.9563169198300234,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:39.769830+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-05",
+    "description": "Stimulation of channel H'8-9 0.1mA",
+    "stim_contacts": [
+      "H'8",
+      "H'9"
+    ],
+    "dipole_pos_m": [
+      -0.031135000000000003,
+      0.03937499999999999,
+      0.03766
+    ],
+    "nearest_source_dist_m": 0.003683833493627627,
+    "epoch_count": 21,
+    "eeg_channel_count": 217,
+    "matched_channel_count": 217,
+    "peak_sample": 2057,
+    "peak_latency_ms": 7.125,
+    "topo_corr_peak_abs": 0.16472426927722486,
+    "topo_corr_peak_signed": -0.16472426927722486,
+    "topo_corr_rms": 0.2638032832805547,
+    "interp_topo_corr": 0.8546195243015877,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:40.550297+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-06",
+    "description": "Stimulation of channel X'2-3 0.1mA",
+    "stim_contacts": [
+      "X'2",
+      "X'3"
+    ],
+    "dipole_pos_m": [
+      -0.008055,
+      0.04912,
+      -0.024815
+    ],
+    "nearest_source_dist_m": 0.029593690551348736,
+    "epoch_count": 31,
+    "eeg_channel_count": 212,
+    "matched_channel_count": 212,
+    "peak_sample": 2061,
+    "peak_latency_ms": 7.625,
+    "topo_corr_peak_abs": 0.7024577052885184,
+    "topo_corr_peak_signed": 0.7024577052885184,
+    "topo_corr_rms": 0.6936843288289151,
+    "interp_topo_corr": 0.9150196803502438,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:41.498645+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-07",
+    "description": "Stimulation of channel X'2-3 0.3mA",
+    "stim_contacts": [
+      "X'2",
+      "X'3"
+    ],
+    "dipole_pos_m": [
+      -0.008055,
+      0.04912,
+      -0.024815
+    ],
+    "nearest_source_dist_m": 0.029593690551348736,
+    "epoch_count": 40,
+    "eeg_channel_count": 210,
+    "matched_channel_count": 210,
+    "peak_sample": 2053,
+    "peak_latency_ms": 6.625,
+    "topo_corr_peak_abs": 0.26479682085210937,
+    "topo_corr_peak_signed": -0.26479682085210937,
+    "topo_corr_rms": 0.07262251986005155,
+    "interp_topo_corr": 0.8442238672027477,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:42.328205+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-08",
+    "description": "Stimulation of channel X'6-7 0.1mA",
+    "stim_contacts": [
+      "X'6",
+      "X'7"
+    ],
+    "dipole_pos_m": [
+      -0.010195,
+      0.05151,
+      -0.006234999999999999
+    ],
+    "nearest_source_dist_m": 0.02021405123742095,
+    "epoch_count": 37,
+    "eeg_channel_count": 205,
+    "matched_channel_count": 205,
+    "peak_sample": 2042,
+    "peak_latency_ms": 5.25,
+    "topo_corr_peak_abs": 0.33179085268631936,
+    "topo_corr_peak_signed": -0.33179085268631936,
+    "topo_corr_rms": 0.2469279676702304,
+    "interp_topo_corr": 0.8650485559867437,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:43.093997+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-09",
+    "description": "Stimulation of channel X'6-7 0.3mA",
+    "stim_contacts": [
+      "X'6",
+      "X'7"
+    ],
+    "dipole_pos_m": [
+      -0.010195,
+      0.05151,
+      -0.006234999999999999
+    ],
+    "nearest_source_dist_m": 0.02021405123742095,
+    "epoch_count": 39,
+    "eeg_channel_count": 201,
+    "matched_channel_count": 201,
+    "peak_sample": 2061,
+    "peak_latency_ms": 7.625,
+    "topo_corr_peak_abs": 0.13211321852977775,
+    "topo_corr_peak_signed": 0.13211321852977775,
+    "topo_corr_rms": 0.02692785927958093,
+    "interp_topo_corr": 0.9214496925408213,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:43.892988+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-10",
+    "description": "Stimulation of channel X'14-15 0.1mA",
+    "stim_contacts": [
+      "X'14",
+      "X'15"
+    ],
+    "dipole_pos_m": [
+      -0.009835,
+      0.055395,
+      0.03768
+    ],
+    "nearest_source_dist_m": 0.0017344348926112392,
+    "epoch_count": 48,
+    "eeg_channel_count": 205,
+    "matched_channel_count": 205,
+    "peak_sample": 2064,
+    "peak_latency_ms": 8.0,
+    "topo_corr_peak_abs": 0.32405452392022177,
+    "topo_corr_peak_signed": 0.32405452392022177,
+    "topo_corr_rms": 0.14411491686298275,
+    "interp_topo_corr": 0.8937377925802781,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:44.713862+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-11",
+    "description": "Stimulation of channel X'14-15 0.3mA",
+    "stim_contacts": [
+      "X'14",
+      "X'15"
+    ],
+    "dipole_pos_m": [
+      -0.009835,
+      0.055395,
+      0.03768
+    ],
+    "nearest_source_dist_m": 0.0017344348926112392,
+    "epoch_count": 46,
+    "eeg_channel_count": 202,
+    "matched_channel_count": 202,
+    "peak_sample": 2063,
+    "peak_latency_ms": 7.875,
+    "topo_corr_peak_abs": 0.3522096877284416,
+    "topo_corr_peak_signed": -0.3522096877284416,
+    "topo_corr_rms": 0.1054240174454554,
+    "interp_topo_corr": 0.8765101692885119,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:45.506755+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-12",
+    "description": "Stimulation of channel Y'1-2 0.1mA",
+    "stim_contacts": [
+      "Y'1",
+      "Y'2"
+    ],
+    "dipole_pos_m": [
+      -0.006025,
+      0.029995,
+      0.044735
+    ],
+    "nearest_source_dist_m": 0.005402103847940307,
+    "epoch_count": 41,
+    "eeg_channel_count": 208,
+    "matched_channel_count": 208,
+    "peak_sample": 2057,
+    "peak_latency_ms": 7.125,
+    "topo_corr_peak_abs": 0.7162034389464351,
+    "topo_corr_peak_signed": 0.7162034389464351,
+    "topo_corr_rms": 0.5675792459411122,
+    "interp_topo_corr": 0.8609818732798651,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:46.379327+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-13",
+    "description": "Stimulation of channel Y'1-2 0.3mA",
+    "stim_contacts": [
+      "Y'1",
+      "Y'2"
+    ],
+    "dipole_pos_m": [
+      -0.006025,
+      0.029995,
+      0.044735
+    ],
+    "nearest_source_dist_m": 0.005402103847940307,
+    "epoch_count": 39,
+    "eeg_channel_count": 211,
+    "matched_channel_count": 211,
+    "peak_sample": 2063,
+    "peak_latency_ms": 7.875,
+    "topo_corr_peak_abs": 0.3506854746821578,
+    "topo_corr_peak_signed": -0.3506854746821578,
+    "topo_corr_rms": 0.3119472447672307,
+    "interp_topo_corr": 0.8744377586193054,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:47.192341+00:00"
+  },
+  {
+    "subject": "sub-05",
+    "run": "sub-05_task-seegstim_run-14",
+    "description": "Stimulation of channel Y'5-6 0.1mA",
+    "stim_contacts": [
+      "Y'5",
+      "Y'6"
+    ],
+    "dipole_pos_m": [
+      -0.0231,
+      0.035955,
+      0.052095
+    ],
+    "nearest_source_dist_m": 0.0025023261773117656,
+    "epoch_count": 45,
+    "eeg_channel_count": 210,
+    "matched_channel_count": 210,
+    "peak_sample": 2056,
+    "peak_latency_ms": 7.0,
+    "topo_corr_peak_abs": 0.5714420846619277,
+    "topo_corr_peak_signed": -0.5714420846619277,
+    "topo_corr_rms": 0.5588482668649731,
+    "interp_topo_corr": 0.9254738732155826,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:48.065365+00:00"
+  },
+  {
+    "subject": "sub-06",
+    "run": "sub-06_task-seegstim_run-01",
+    "description": "Stimulation of channel E'2-3 0.1mA",
+    "stim_contacts": [
+      "E'2",
+      "E'3"
+    ],
+    "dipole_pos_m": [
+      -0.02127,
+      -0.0555,
+      -0.0078049999999999994
+    ],
+    "nearest_source_dist_m": 0.034667207601747754,
+    "epoch_count": 46,
+    "eeg_channel_count": 182,
+    "matched_channel_count": 182,
+    "peak_sample": 2054,
+    "peak_latency_ms": 6.75,
+    "topo_corr_peak_abs": 0.07703185043337563,
+    "topo_corr_peak_signed": -0.07703185043337563,
+    "topo_corr_rms": 0.0024116124731766524,
+    "interp_topo_corr": 0.8099461277916583,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:48.884485+00:00"
+  },
+  {
+    "subject": "sub-06",
+    "run": "sub-06_task-seegstim_run-02",
+    "description": "Stimulation of channel E'2-3 0.3mA",
+    "stim_contacts": [
+      "E'2",
+      "E'3"
+    ],
+    "dipole_pos_m": [
+      -0.02127,
+      -0.0555,
+      -0.0078049999999999994
+    ],
+    "nearest_source_dist_m": 0.034667207601747754,
+    "epoch_count": 46,
+    "eeg_channel_count": 178,
+    "matched_channel_count": 178,
+    "peak_sample": 2043,
+    "peak_latency_ms": 5.375,
+    "topo_corr_peak_abs": 0.14480954636870527,
+    "topo_corr_peak_signed": 0.14480954636870527,
+    "topo_corr_rms": 0.2299091158419171,
+    "interp_topo_corr": 0.8328905545847641,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:49.650567+00:00"
+  },
+  {
+    "subject": "sub-06",
+    "run": "sub-06_task-seegstim_run-03",
+    "description": "Stimulation of channel E'11-12 0.1mA",
+    "stim_contacts": [
+      "E'11",
+      "E'12"
+    ],
+    "dipole_pos_m": [
+      -0.056385,
+      -0.057315000000000005,
+      -0.012244999999999999
+    ],
+    "nearest_source_dist_m": 0.03924463942534642,
+    "epoch_count": 47,
+    "eeg_channel_count": 184,
+    "matched_channel_count": 184,
+    "peak_sample": 2054,
+    "peak_latency_ms": 6.75,
+    "topo_corr_peak_abs": 0.055869603954255075,
+    "topo_corr_peak_signed": -0.055869603954255075,
+    "topo_corr_rms": 0.05236169317849451,
+    "interp_topo_corr": 0.9447152295058481,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:50.479722+00:00"
+  },
+  {
+    "subject": "sub-06",
+    "run": "sub-06_task-seegstim_run-04",
+    "description": "Stimulation of channel E'11-12 0.3mA",
+    "stim_contacts": [
+      "E'11",
+      "E'12"
+    ],
+    "dipole_pos_m": [
+      -0.056385,
+      -0.057315000000000005,
+      -0.012244999999999999
+    ],
+    "nearest_source_dist_m": 0.03924463942534642,
+    "epoch_count": 22,
+    "eeg_channel_count": 181,
+    "matched_channel_count": 181,
+    "peak_sample": 2066,
+    "peak_latency_ms": 8.25,
+    "topo_corr_peak_abs": 0.29936709447967413,
+    "topo_corr_peak_signed": -0.29936709447967413,
+    "topo_corr_rms": 0.020199729299201448,
+    "interp_topo_corr": 0.720256805664458,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:51.165317+00:00"
+  },
+  {
+    "subject": "sub-06",
+    "run": "sub-06_task-seegstim_run-05",
+    "description": "Stimulation of channel Z'4-5 0.1mA",
+    "stim_contacts": [
+      "Z'4",
+      "Z'5"
+    ],
+    "dipole_pos_m": [
+      -0.02867,
+      -0.036285,
+      -0.013225
+    ],
+    "nearest_source_dist_m": 0.03527272416772984,
+    "epoch_count": 42,
+    "eeg_channel_count": 172,
+    "matched_channel_count": 172,
+    "peak_sample": 2052,
+    "peak_latency_ms": 6.5,
+    "topo_corr_peak_abs": 0.045694829650148136,
+    "topo_corr_peak_signed": 0.045694829650148136,
+    "topo_corr_rms": 0.2605450219170154,
+    "interp_topo_corr": 0.9305044139699146,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:51.876099+00:00"
+  },
+  {
+    "subject": "sub-06",
+    "run": "sub-06_task-seegstim_run-06",
+    "description": "Stimulation of channel Z'13-14 0.1mA",
+    "stim_contacts": [
+      "Z'13",
+      "Z'14"
+    ],
+    "dipole_pos_m": [
+      -0.060625,
+      -0.044845,
+      -0.001495
+    ],
+    "nearest_source_dist_m": 0.025985751577173744,
+    "epoch_count": 42,
+    "eeg_channel_count": 179,
+    "matched_channel_count": 179,
+    "peak_sample": 2079,
+    "peak_latency_ms": 9.875,
+    "topo_corr_peak_abs": 0.4879307733402038,
+    "topo_corr_peak_signed": 0.4879307733402038,
+    "topo_corr_rms": 0.6231179028555065,
+    "interp_topo_corr": 0.9387301268883602,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:52.608409+00:00"
+  },
+  {
+    "subject": "sub-06",
+    "run": "sub-06_task-seegstim_run-07",
+    "description": "Stimulation of channel Z'13-14 0.3mA",
+    "stim_contacts": [
+      "Z'13",
+      "Z'14"
+    ],
+    "dipole_pos_m": [
+      -0.060625,
+      -0.044845,
+      -0.001495
+    ],
+    "nearest_source_dist_m": 0.025985751577173744,
+    "epoch_count": 36,
+    "eeg_channel_count": 178,
+    "matched_channel_count": 178,
+    "peak_sample": 2066,
+    "peak_latency_ms": 8.25,
+    "topo_corr_peak_abs": 0.650338468048564,
+    "topo_corr_peak_signed": 0.650338468048564,
+    "topo_corr_rms": 0.600324799813607,
+    "interp_topo_corr": 0.8496198208857855,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:53.318816+00:00"
+  },
+  {
+    "subject": "sub-07",
+    "run": "sub-07_task-seegstim_run-01",
+    "description": "Stimulation of channel B11-12 0.1mA",
+    "stim_contacts": [
+      "B11",
+      "B12"
+    ],
+    "dipole_pos_m": [
+      0.054819999999999994,
+      -0.004305,
+      -0.027435
+    ],
+    "nearest_source_dist_m": 0.060121878634297646,
+    "epoch_count": 32,
+    "eeg_channel_count": 187,
+    "matched_channel_count": 187,
+    "peak_sample": 2065,
+    "peak_latency_ms": 8.125,
+    "topo_corr_peak_abs": 0.06168422988123877,
+    "topo_corr_peak_signed": 0.06168422988123877,
+    "topo_corr_rms": 0.03199654421497313,
+    "interp_topo_corr": 0.9264031542667251,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:54.071833+00:00"
+  },
+  {
+    "subject": "sub-07",
+    "run": "sub-07_task-seegstim_run-02",
+    "description": "Stimulation of channel B11-12 0.3mA",
+    "stim_contacts": [
+      "B11",
+      "B12"
+    ],
+    "dipole_pos_m": [
+      0.054819999999999994,
+      -0.004305,
+      -0.027435
+    ],
+    "nearest_source_dist_m": 0.060121878634297646,
+    "epoch_count": 38,
+    "eeg_channel_count": 169,
+    "matched_channel_count": 169,
+    "peak_sample": 2040,
+    "peak_latency_ms": 5.0,
+    "topo_corr_peak_abs": 0.07650547609840543,
+    "topo_corr_peak_signed": -0.07650547609840543,
+    "topo_corr_rms": 0.12017189064131617,
+    "interp_topo_corr": 0.7725350795423955,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:54.773612+00:00"
+  },
+  {
+    "subject": "sub-07",
+    "run": "sub-07_task-seegstim_run-03",
+    "description": "Stimulation of channel B'13-14 0.1mA",
+    "stim_contacts": [
+      "B'13",
+      "B'14"
+    ],
+    "dipole_pos_m": [
+      -0.0649,
+      -0.019575000000000002,
+      -0.017675
+    ],
+    "nearest_source_dist_m": 0.04775788331974947,
+    "epoch_count": 46,
+    "eeg_channel_count": 182,
+    "matched_channel_count": 182,
+    "peak_sample": 2048,
+    "peak_latency_ms": 6.0,
+    "topo_corr_peak_abs": 0.2075101903638248,
+    "topo_corr_peak_signed": -0.2075101903638248,
+    "topo_corr_rms": 0.18609592375003706,
+    "interp_topo_corr": 0.9134399025132096,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:55.580595+00:00"
+  },
+  {
+    "subject": "sub-07",
+    "run": "sub-07_task-seegstim_run-04",
+    "description": "Stimulation of channel B'13-14 0.3mA",
+    "stim_contacts": [
+      "B'13",
+      "B'14"
+    ],
+    "dipole_pos_m": [
+      -0.0649,
+      -0.019575000000000002,
+      -0.017675
+    ],
+    "nearest_source_dist_m": 0.04775788331974947,
+    "epoch_count": 39,
+    "eeg_channel_count": 182,
+    "matched_channel_count": 182,
+    "peak_sample": 2041,
+    "peak_latency_ms": 5.125,
+    "topo_corr_peak_abs": 0.5699747885750057,
+    "topo_corr_peak_signed": 0.5699747885750057,
+    "topo_corr_rms": 0.4131871040947143,
+    "interp_topo_corr": 0.8135840305766143,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:56.408323+00:00"
+  },
+  {
+    "subject": "sub-07",
+    "run": "sub-07_task-seegstim_run-05",
+    "description": "Stimulation of channel Q2-3 0.3mA",
+    "stim_contacts": [
+      "Q2",
+      "Q3"
+    ],
+    "dipole_pos_m": [
+      0.007975,
+      -0.042745,
+      0.03207
+    ],
+    "nearest_source_dist_m": 0.024072352255018633,
+    "epoch_count": 41,
+    "eeg_channel_count": 171,
+    "matched_channel_count": 171,
+    "peak_sample": 2080,
+    "peak_latency_ms": 10.0,
+    "topo_corr_peak_abs": 0.4572066339842916,
+    "topo_corr_peak_signed": 0.4572066339842916,
+    "topo_corr_rms": 0.4984573129227279,
+    "interp_topo_corr": 0.8449297404964274,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:57.170908+00:00"
+  },
+  {
+    "subject": "sub-07",
+    "run": "sub-07_task-seegstim_run-06",
+    "description": "Stimulation of channel Q16-17 0.1mA",
+    "stim_contacts": [
+      "Q16",
+      "Q17"
+    ],
+    "dipole_pos_m": [
+      0.063025,
+      -0.043035000000000004,
+      0.03184
+    ],
+    "nearest_source_dist_m": 0.029913194879976682,
+    "epoch_count": 25,
+    "eeg_channel_count": 174,
+    "matched_channel_count": 174,
+    "peak_sample": 2042,
+    "peak_latency_ms": 5.25,
+    "topo_corr_peak_abs": 0.06994924939097656,
+    "topo_corr_peak_signed": -0.06994924939097656,
+    "topo_corr_rms": 0.16238877721419,
+    "interp_topo_corr": 0.835924025507323,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:57.959294+00:00"
+  },
+  {
+    "subject": "sub-07",
+    "run": "sub-07_task-seegstim_run-07",
+    "description": "Stimulation of channel Q16-17 0.3mA",
+    "stim_contacts": [
+      "Q16",
+      "Q17"
+    ],
+    "dipole_pos_m": [
+      0.063025,
+      -0.043035000000000004,
+      0.03184
+    ],
+    "nearest_source_dist_m": 0.029913194879976682,
+    "epoch_count": 42,
+    "eeg_channel_count": 162,
+    "matched_channel_count": 162,
+    "peak_sample": 2046,
+    "peak_latency_ms": 5.75,
+    "topo_corr_peak_abs": 0.3880205907397909,
+    "topo_corr_peak_signed": 0.3880205907397909,
+    "topo_corr_rms": 0.3614845278382719,
+    "interp_topo_corr": 0.8506632082845319,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:42:58.646510+00:00"
+  }
+]

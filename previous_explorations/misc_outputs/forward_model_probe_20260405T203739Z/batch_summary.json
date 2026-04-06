@@ -1,0 +1,24 @@
+{
+  "dataset": "localize_mi",
+  "probe_type": "forward_model",
+  "subject_count": 1,
+  "total_runs": 0,
+  "total_failures": 1,
+  "target_labels": [
+    "F3",
+    "Cz",
+    "O1"
+  ],
+  "train_fraction": 0.7,
+  "shift_fraction": 0.25,
+  "ridge_alpha": 1.0,
+  "completed_at_utc": "2026-04-05T20:37:39.597370+00:00",
+  "channel_summary": [],
+  "failures": [
+    {
+      "subject": "sub-01",
+      "run": "sub-01_task-seegstim_run-01",
+      "error": "FileNotFoundError('missing: /Users/hq/code/eeg_cleaner/data/external/localize_mi/extracted/derivatives/epochs/sub-01/ieeg/sub-01_task-seegstim_run-01_epochs.npy')"
+    }
+  ]
+}

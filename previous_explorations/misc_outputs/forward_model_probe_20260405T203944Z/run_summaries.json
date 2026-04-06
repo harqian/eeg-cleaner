@@ -1,0 +1,28 @@
+[
+  {
+    "subject": "sub-01",
+    "run": "sub-01_task-seegstim_run-01",
+    "description": "Stimulation of channel K13-14 1mA",
+    "stim_contacts": [
+      "K13",
+      "K14"
+    ],
+    "dipole_pos_m": [
+      0.047305,
+      -0.017225,
+      0.053500000000000006
+    ],
+    "nearest_source_dist_m": 0.0019012431684617564,
+    "epoch_count": 38,
+    "eeg_channel_count": 236,
+    "matched_channel_count": 236,
+    "peak_sample": 2020,
+    "peak_latency_ms": 2.5,
+    "topo_corr_peak_abs": -0.05472086896128478,
+    "topo_corr_peak_signed": -0.1177727611789085,
+    "topo_corr_rms": 0.23180806923067723,
+    "interp_topo_corr": 0.8832002225760479,
+    "forward_beats_interpolation": false,
+    "completed_at_utc": "2026-04-05T20:39:49.116364+00:00"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "dataset": "localize_mi",
+  "probe_type": "forward_model_stimulation",
+  "subject_count": 7,
+  "total_runs": 61,
+  "total_failures": 0,
+  "completed_at_utc": "2026-04-05T21:16:10.845857+00:00",
+  "aggregate": {
+    "topo_corr_peak_abs_mean": 0.3375987661279285,
+    "topo_corr_peak_abs_median": 0.293318764333018,
+    "topo_corr_peak_signed_mean": -0.08707135680036225,
+    "topo_corr_rms_mean": 0.26111663080064385,
+    "interp_topo_corr_mean": 0.8749525967405684,
+    "forward_beats_interpolation_frac": 0.0
+  },
+  "failures": []
+}

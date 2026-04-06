@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 546, in <module>
+    main()
+    ~~~~^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 527, in main
+    results.append(fetch_piastra_2024_metadata(force=args.force, download_archive=args.download_piastra_archive))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 319, in fetch_piastra_2024_metadata
+    recursive_wget("https://webdav.data.ru.nl/dcmn/DSC_4020000.14_413_v1/", archive_dir, force=force)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 269, in recursive_wget
+    run(
+    ~~~^
+        [
+        ^
+    ...<10 lines>...
+        ]
+        ^
+    )
+    ^
+  File "/Users/hq/code/eeg_cleaner/scripts/fetch_sources.py", line 69, in run
+    subprocess.run(command, cwd=cwd, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/subprocess.py", line 1038, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/hq/.local/share/uv/python/cpython-3.14.0-macos-aarch64-none/lib/python3.14/subprocess.py", line 1970, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'wget'

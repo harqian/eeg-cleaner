@@ -1,0 +1,208 @@
+{
+  "dataset": "localize_mi",
+  "probe_type": "forward_model_stimulation",
+  "subject_count": 7,
+  "total_runs": 23,
+  "total_failures": 38,
+  "completed_at_utc": "2026-04-05T20:41:53.204269+00:00",
+  "aggregate": {
+    "topo_corr_peak_abs_mean": 0.3547297256317766,
+    "topo_corr_peak_abs_median": 0.3967570138197393,
+    "topo_corr_peak_signed_mean": 0.024306386155203433,
+    "topo_corr_rms_mean": 0.3073963990382332,
+    "interp_topo_corr_mean": 0.86489054947257,
+    "forward_beats_interpolation_frac": 0.0
+  },
+  "failures": [
+    {
+      "subject": "sub-02",
+      "run": "sub-02_task-seegstim_run-01",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'1-2 1mA\")"
+    },
+    {
+      "subject": "sub-02",
+      "run": "sub-02_task-seegstim_run-02",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'1-2 0.5mA\")"
+    },
+    {
+      "subject": "sub-02",
+      "run": "sub-02_task-seegstim_run-03",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'4-5 1mA\")"
+    },
+    {
+      "subject": "sub-02",
+      "run": "sub-02_task-seegstim_run-04",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'4-5 0.5mA\")"
+    },
+    {
+      "subject": "sub-02",
+      "run": "sub-02_task-seegstim_run-05",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'8-9 1mA\")"
+    },
+    {
+      "subject": "sub-02",
+      "run": "sub-02_task-seegstim_run-06",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'8-9 0.5mA\")"
+    },
+    {
+      "subject": "sub-03",
+      "run": "sub-03_task-seegstim_run-01",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel B'13-14 0.5mA\")"
+    },
+    {
+      "subject": "sub-03",
+      "run": "sub-03_task-seegstim_run-02",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel H'1-2 0.5mA\")"
+    },
+    {
+      "subject": "sub-03",
+      "run": "sub-03_task-seegstim_run-03",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel H'8-9 0.5mA\")"
+    },
+    {
+      "subject": "sub-03",
+      "run": "sub-03_task-seegstim_run-04",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel R'2-3 0.3mA\")"
+    },
+    {
+      "subject": "sub-03",
+      "run": "sub-03_task-seegstim_run-05",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel R'2-3 0.5mA\")"
+    },
+    {
+      "subject": "sub-03",
+      "run": "sub-03_task-seegstim_run-06",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel R'7-8 0.3mA\")"
+    },
+    {
+      "subject": "sub-03",
+      "run": "sub-03_task-seegstim_run-07",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel R'7-8 0.5mA\")"
+    },
+    {
+      "subject": "sub-04",
+      "run": "sub-04_task-seegstim_run-08",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel W'2-3 0.1mA\")"
+    },
+    {
+      "subject": "sub-04",
+      "run": "sub-04_task-seegstim_run-09",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel W'7-8 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-01",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel G'8-9 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-02",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel G'8-9 0.3mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-03",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel H'2-3 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-04",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel H'2-3 0.3mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-05",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel H'8-9 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-06",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'2-3 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-07",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'2-3 0.3mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-08",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'6-7 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-09",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'6-7 0.3mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-10",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'14-15 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-11",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel X'14-15 0.3mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-12",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel Y'1-2 0.1mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-13",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel Y'1-2 0.3mA\")"
+    },
+    {
+      "subject": "sub-05",
+      "run": "sub-05_task-seegstim_run-14",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel Y'5-6 0.1mA\")"
+    },
+    {
+      "subject": "sub-06",
+      "run": "sub-06_task-seegstim_run-01",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel E'2-3 0.1mA\")"
+    },
+    {
+      "subject": "sub-06",
+      "run": "sub-06_task-seegstim_run-02",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel E'2-3 0.3mA\")"
+    },
+    {
+      "subject": "sub-06",
+      "run": "sub-06_task-seegstim_run-03",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel E'11-12 0.1mA\")"
+    },
+    {
+      "subject": "sub-06",
+      "run": "sub-06_task-seegstim_run-04",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel E'11-12 0.3mA\")"
+    },
+    {
+      "subject": "sub-06",
+      "run": "sub-06_task-seegstim_run-05",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel Z'4-5 0.1mA\")"
+    },
+    {
+      "subject": "sub-06",
+      "run": "sub-06_task-seegstim_run-06",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel Z'13-14 0.1mA\")"
+    },
+    {
+      "subject": "sub-06",
+      "run": "sub-06_task-seegstim_run-07",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel Z'13-14 0.3mA\")"
+    },
+    {
+      "subject": "sub-07",
+      "run": "sub-07_task-seegstim_run-03",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel B'13-14 0.1mA\")"
+    },
+    {
+      "subject": "sub-07",
+      "run": "sub-07_task-seegstim_run-04",
+      "error": "ValueError(\"cannot parse stimulation contacts from: Stimulation of channel B'13-14 0.3mA\")"
+    }
+  ]
+}
