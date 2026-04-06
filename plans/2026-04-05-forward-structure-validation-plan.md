@@ -1,5 +1,13 @@
 # plan: fix the forward-validation target and strengthen the forward-model implementation
 
+## execution status
+
+- [x] phase 1 automated implementation completed on 2026-04-06 with full-run artifacts in `outputs/forward_structure_probe_20260406T183155Z`
+- [x] phase 2 automated implementation completed on 2026-04-06 with full-run artifacts in `outputs/forward_model_probe_v2_20260406T183155Z`
+- [x] phase 3 automated implementation completed on 2026-04-06 with full-run artifacts in `outputs/forward_validation_stack_20260406T183155Z`
+- [x] phase 4 repo-memory update completed on 2026-04-06 with summary notes in `outputs/forward_validation_summary_20260406.md`
+- [ ] manual verification items completed
+
 ## overview
 
 this plan addresses the two current high-priority issues in the repo’s forward-model work:
